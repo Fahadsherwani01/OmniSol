@@ -1,0 +1,250 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <link rel="shortcut icon" href="~/Images/121.png" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.title</title>
+    
+    <!-- custom-theme -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   
+    <script src="https://wchat.freshchat.com/js/widget.js"></script>
+    @*<script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+               function hideURLbar(){ window.scrollTo(0,1); } </script>*@
+
+    <!-- Portfolio-CSS -->
+    <link rel="stylesheet" href="~/theme/css/swipebox.css" type="text/css" media="all">
+
+    <link href="~/theme/css/aos.css" rel="stylesheet" type="text/css" media="all" /><!-- //animation effects-css-->
+
+    <link rel="stylesheet" href="~/theme/css/index.css"><!-- skills bars CSS-->
+    <!-- custom-theme -->
+    <link href="~/theme/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/theme/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- //custom-theme -->
+    <!-- font-awesome-icons -->
+    <link href="~/theme/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- googlefonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900&amp;subset=arabic,latin-ext" rel="stylesheet">
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <script>
+         window.fcWidget.init({
+             token: "b77385bb-dfc1-465a-8f4f-775cd9d92a8b",
+             host: "https://wchat.freshchat.com"
+         });
+    </script>
+    <div class="header-w3layouts">
+        <!-- Navigation -->
+        <nav style="background:rgba(48, 233, 12, 0.80)" class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">My_Design</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1><a class="navbar-brand" href="index.html">My Design</a></h1>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right cl-effect-15">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden"><a class="page-scroll" href="#page-top"></a>	</li>
+                    <li><a class="page-scroll scroll" href="/home/index">Home</a></li>
+                    <li><a class="page-scroll scroll" href="/home/about">About</a></li>
+                    <li><a class="page-scroll scroll" href="/home/services">Services</a></li>
+                 
+                    <li><a class="page-scroll scroll" href="/home/portfolio">Portfolio</a></li>
+                    <li><a class="page-scroll scroll" href="/home/contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            <!-- /.container -->
+        </nav>
+    </div>
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <div class="copyright-agile" style="background-color:#82b550">
+        <div class="col-md-4">
+            <div>
+                <h4>OmniSol</h4><br />
+                <p>Opp. Noorabad Street, Fateh Garh, Defense Road, Sialkot, Pakistan</p>
+
+                <p>© 2018 All rights reserved | Design by <a href="http://omnisolutions.org">OmniSol</a></p>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="col-md-6">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <h4>
+                                    Short Links
+                                </h4>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <a href="/home/index">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/home/contact">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="/home/Portfolio">Portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a href="/home/about">About</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>
+                                <h4>
+                                    Services
+                                </h4>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul class="cl-effect-15">
+                                    <li>
+                                        <a class="page-scroll scroll" href="/home/index">Software Development</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll scroll" href="/home/contact">Mobile App Development</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll scroll" href="/home/Portfolio">SEO</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll scroll" href="/home/about">Marketing</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="fb-page " data-href="https://www.facebook.com/OmniSolOfficial/" data-tabs="timeline" data-height="250" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/OmniSolOfficial/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/OmniSolOfficial/">OmniSol</a></blockquote></div>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+ 
+    <script type="text/javascript" src="~/theme/js/jquery-2.1.4.min.js"></script>
+    <!-- for bootstrap working -->
+    <script src="~/theme/js/bootstrap.js"></script>
+    <!-- //for bootstrap working -->
+    <!-- //js -->
+    <!-- Gallery-Tab-JavaScript -->
+    <script src="~/theme/js/cbpFWTabs.js"></script>
+    <script>
+        (function () {
+            [].slice.call(document.querySelectorAll('.tabs')).forEach(function (el) {
+                new CBPFWTabs(el);
+            });
+        })();
+    </script>
+    <!-- //Gallery-Tab-JavaScript -->
+    <!-- Swipe-Box-JavaScript -->
+    <script src="~/theme/js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $(".swipebox").swipebox();
+        });
+    </script>
+    <!-- //Swipe-Box-JavaScript -->
+    <!-- Scrolling Nav JavaScript -->
+    <script src="~/theme/js/scrolling-nav.js"></script>
+    <!-- //fixed-scroll-nav-js -->
+
+    <script src="~/theme/js/index.js"></script><!-- skills bars JS FILE-->
+    <!-- animation effects-js files-->
+    <script src="~/theme/js/aos.js"></script><!-- //animation effects-js-->
+    <script src="~/theme/js/aos1.js"></script><!-- //animation effects-js-->
+    <!-- animation effects-js files-->
+    <!-- //here starts scrolling icon -->
+    <script src="~/theme/js/SmoothScroll.min.js"></script>
+    <script type="text/javascript" src="~/theme/js/move-top.js"></script>
+    <script type="text/javascript" src="~/theme/js/easing.js"></script>
+    <!-- here stars scrolling script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    <!-- //here ends scrolling script -->
+    <!-- //here ends scrolling icon -->
+    <!-- scrolling script -->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+
+
+    <!-- //scrolling script -->
+    <div id="fb-root"></div>
+    <script>
+(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- //Facebook Page -->
+
+   @RenderSection("scripts",required: false);
+
+</body>
+</html>
